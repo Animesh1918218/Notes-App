@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mylayoutnew"
+    android:background="@color/white"
+    android:transitionName="mybigscreen"
+    tools:context=".AddActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="match_parent"
+        android:theme="@style/myAllToolbarThemes"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:backgroundTint="@color/white"
+        android:inputType="textMultiLine"
+        android:hint="Add Some Text Here"
+        android:layout_marginTop="20sp"
+
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:transitionName="mytxttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myToolBar" />
+
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/newadbtn"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

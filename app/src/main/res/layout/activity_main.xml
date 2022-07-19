@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_grey"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:queryHint="Search Here"
+        android:id="@+id/mysearch"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/mysearchbackground"/>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10sp"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRlView"
+        tools:listitem="@layout/myrecyclerview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:id="@+id/myRandomTxt"
+        android:layout_marginTop="10sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="You Are Ready To Add Some Notes"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/myAddBtn"
+        android:transitionName="mybigscreen"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10sp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:tint="@android:color/white"
+        />
+
+</FrameLayout>
+    </LinearLayout>
